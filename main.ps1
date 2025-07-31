@@ -117,6 +117,10 @@ if ($CertPass) {
    $params += "--pwd", $CertPass
 }
 
+if ($SkipApiVersionCheck) {
+   $params += "--skipApiVersionCheck"
+}
+
 if ($isLinux -or $isMacOS) {
    $null = Start-Process -FilePath azurite -ArgumentList $params -Verbose
 } else {
