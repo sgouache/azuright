@@ -8,6 +8,7 @@ param (
    [switch]$Loose,
    [switch]$OAuth,
    [switch]$SelfSignedCert,
+   [switch]$SkipApiVersionCheck,
    [string]$CertPath,
    [string]$CertKeyPath,
    [string]$CertPass
