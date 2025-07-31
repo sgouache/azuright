@@ -37,6 +37,7 @@ Create a workflow `.yml` file in your repositories `.github/workflows` directory
 * `cert-path` - Path to a locally trusted PEM or PFX certificate file path to enable HTTPS mode.
 * `cert-password` - Password for PFX file. Required when cert-path points to a PFX file.
 * `cert-key-path` - Path to a locally trusted PEM key file, required when cert-path points to a PEM file.
+* `skip-api-version-check` - Skip API version check. The default value is false. Needed to workaround "The API version xxxx-xx-xx is not supported by Azurite." error.
 
 ### Outputs
 
